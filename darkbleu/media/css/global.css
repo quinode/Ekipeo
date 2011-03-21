@@ -1,0 +1,527 @@
+/* @override 
+	http://dev.quinode.fr:8000/site_media/css/global.css
+	http://127.0.0.1:8000/site_media/css/global.css
+*/
+
+/*------ REPLACE THIS WITH YOUR CUSTOM CSS --------- */
+
+body {
+	background: #818181 url(../img/fondeg.jpg) repeat-x;
+	position: relative;
+}
+
+* {
+	font-family: 'Droid Sans', Tahoma, Arial;
+}
+
+h2,
+p,
+#breadcrumb-menu,
+#description,
+.paging,
+.share,
+#comments,
+.comment {
+	margin: 20px 0;
+}
+
+h1,
+h1 div.editable-original {
+	color: #323232;
+	font: 700 36px "Yanone Kaffeesatz", Tahoma, Arial;
+}
+
+h1{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #888;
+	border-style: dotted;
+}
+
+h2 {
+	font-size: 150%;
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+}
+
+h3 {
+	font-weight: normal;
+	margin: 20px 0 10px;
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+}
+
+h4 {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+h5 {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.grid {
+	padding: 30px 0;
+}
+
+.container_12 {
+	position: relative;
+}
+
+#grid-top {
+	padding: 0;
+	background: url(../img/arrondi.png) no-repeat center top;
+	height: 157px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	width: 250px;
+	top: 11px;
+	left: 60px;
+}
+
+#ombre_g {
+	width: 16px;
+	height: 120px;
+	position: absolute;
+	z-index: 2;
+	left: 30px;
+	background: url(../img/ombre-gauche.png) repeat-y;
+}
+
+#ombre_d {
+	width: 16px;
+	height: 120px;
+	position: absolute;
+	z-index: 2;
+	background: url(../img/ombre-droite.png) repeat-y;
+	right: 35px;
+}
+
+#slogan {
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+	font-weight: 700;
+	font-size: 28px;
+	color: #eaedd3;
+	position: absolute;
+	left: 377px;
+	top: 48px;
+	text-shadow: #000 2px 2px 4px;
+}
+
+#breadcrumb-menu{
+	margin-top: 4px;
+}
+
+#breadcrumb-menu li,
+#breadcrumb-menu li a{
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+	font-weight: 400;
+	font-size: 18px;
+	color: #636d6d;
+}
+
+form#editable-toolbar a,
+.editable-link {
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+	z-index: 20000;
+	font-weight: normal;
+	font-style: normal;
+}
+form#editable-toolbar a#editable-toolbar-toggle{
+	position: relative;
+	display: inline-block;
+	z-index: 30000;
+}
+
+a.editable-link{
+	position: static;
+	margin-top: -30px;
+	margin-left: -50px;
+}
+
+#grid-top2 {
+	height: 13px;
+}
+
+#grid-top2 div {
+	background: #E4E8E6 url(../img/arrondi13.png) no-repeat center top;
+	height: 13px;
+}
+
+/* @group menu horizontal */
+
+#menuh {
+	position: relative;
+	top: 102px;
+	z-index: 10;
+}
+
+#menuh ul {
+	background-attachment: scroll;
+	display: inline-block;
+}
+
+#menuh li {
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 40px;
+}
+
+#menuh li a {
+	display: inline-block;
+	height: 40px;
+	background: url(../img/barre.png) repeat-x;
+	text-decoration: none;
+	font: 200 20px/37px "Yanone Kaffeesatz", Tahoma, Arial;
+	color: #fff;
+	width: 125px;
+	text-align: center;
+}
+
+#menuh li.first {
+	padding-left: 40px;
+	background: url(../img/barre-gauche40.png) no-repeat left;
+}
+
+#menuh li.last {
+	padding-right: 40px;
+	background: url(../img/barre-droite40.png) no-repeat right;
+}
+
+#menuh li.active a,
+#menuh li a:hover {
+	background-image: url(../img/barre-select.png);
+	font-weight: 500;
+}
+
+/* @end */
+
+/* @group contenu */
+
+#content {
+	background: #e3e8e6;
+}
+
+#grid-middle {
+	min-height: 100%;
+}
+
+#grid-middle img {
+	max-width: 400px;
+}
+
+.gutter {
+	padding: 0 30px;
+}
+
+#grid-middle ul {
+	list-style: disc;
+}
+
+#grid-middle ol {
+	list-style: decimal;
+}
+
+#grid-middle blockquote {
+	border-left: 1px solid #333;
+	margin-left: 30px;
+}
+
+#grid-middle blockquote p {
+	margin-left: 10px;
+	line-height: 100%;
+}
+
+/* @end */
+
+/* @group colonne */
+
+#grid-right li {
+	display: block;
+	margin-top: 3px;
+}
+
+/* @end */
+
+/* @group footer */
+
+#grid-bottom .container_12 {
+	background: #444;
+}
+
+#grid-bottom .grid {
+	background: #444;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#grid-bottom ul {
+	margin: 0 30px;
+}
+
+#grid-bottom ul ul {
+	margin: 0;
+}
+
+#grid-bottom li {
+	float: left;
+	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
+}
+
+#grid-bottom li li {
+	width: 100px;
+	clear: both;
+	margin: 5px;
+	border: 1px solid #333;
+	background: #555;
+	padding: 5px 10px;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+/* @end */
+
+a {
+	color: #008;
+}
+
+table {
+	margin-bottom: 30px;
+}
+
+td, th {
+	padding: 3px;
+}
+
+.active li {
+	font-style: normal;
+}
+
+p {
+	line-height: 150%;
+}
+
+pre,
+pre *,
+code,
+code * {
+	font-family: monospace;
+}
+
+pre {
+	padding: 15px;
+}
+
+#breadcrumb-menu li {
+	list-style-type: none;
+	display: inline;
+	margin-left: 0px;
+}
+
+input,
+textarea {
+	border: 1px solid #999;
+}
+
+textarea {
+	width: 100%;
+}
+
+td, th {
+	padding: 4px;
+}
+
+#grid-bottom a {
+	color: #eee;
+	text-decoration: none;
+}
+
+.since {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.paging {
+	border-top: 1px solid #ccc;
+}
+
+.paging li {
+	padding: 0 5px;
+	margin: 0 !important;
+}
+
+.paging * {
+	display: inline;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.help {
+	font-size: 60%;
+	margin: 0;
+}
+
+.tags ul,
+.tags li {
+	display: inline !important;
+	margin: 0 !important;
+}
+
+.share {
+	background: #eee;
+	padding: 5px;
+}
+
+.button {
+	float: right;
+	padding: 10px;
+	margin: 10px;
+}
+
+.form li {
+	display: block;
+	padding: 5px 10px;
+}
+
+#search .button {
+	margin: 0;
+	padding: 1px 5px;
+	float: none;
+}
+
+#comments p {
+	border-bottom: 1px solid #ddd;
+}
+
+#comments li {
+	padding: 5px;
+	display: block;
+}
+
+#comments li ul {
+	padding: 5px 0 0 30px;
+}
+
+#comments img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.comment {
+	background: #eee;
+}
+
+.comment th,
+.comment td {
+	text-align: left;
+	vertical-align: top;
+	padding: 5px 10px;
+}
+
+.comment .button {
+	margin-right: 0px !important;
+}
+
+.author {
+	background: #fafbd2;
+}
+
+ul .comment {
+	display: none;
+}
+
+ul .posted {
+	display: block !important;
+}
+
+.comment
+.errorlist li {
+	color: #f00;
+	float: left;
+	width: 100%;
+	padding: 0 !important;
+}
+
+.tag-weight-1 {
+	font-size: 80%;
+}
+
+.tag-weight-2 {
+	font-size: 120%;
+}
+
+.tag-weight-3 {
+	font-size: 160%;
+}
+
+.tag-weight-4 {
+	font-size: 200%;
+}
+
+.tweets li {
+	font-size: 70%;
+	clear: both;
+	margin-bottom: 10px;
+	line-height: 130%;
+}
+
+.tweets img {
+	float: left;
+	border: 1px solid #000;
+	margin: 0 5px 5px 0;
+	width: 32px;
+	height: 32px;
+}
+
+.tweets .timespan {
+	font-style: italic;
+	color: #666;
+}
+
+.tweets .name {
+	color: #666;
+}
+
+.recycle {
+	font-size: 150%;
+}
+
+.retweet {
+	float: none;
+	margin-bottom: -5px;
+	width: 16px;
+	height: 16px;
+}
+
+.mezzanine {
+	font-size: 80%;
+}
+
+.form {
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+
+.form li ul,
+.form li li {
+	display: inline;
+}
+
+.form li label {
+	width: 30%;
+	float: left;
+}
+
+.form li li label {
+	width: auto;
+	float: none;
+	cursor: pointer;
+}
+
+#search-results p {
+	margin: 5px 0;
+}
