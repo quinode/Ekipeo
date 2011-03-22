@@ -11,3 +11,17 @@
 {% block main %}
 {% trans "This is the homepage." %}
 {% endblock %}
+
+{% block right_panel %}
+
+
+<ul>
+{% for q in questions %}
+
+    <li>{{q.titre}}</li>
+
+{% endfor %}
+</ul>
+
+
+{% endblock %}

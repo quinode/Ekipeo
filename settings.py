@@ -154,6 +154,7 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.pages",
     "mezzanine.twitter",
+    "questions"
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -175,7 +176,7 @@ MIDDLEWARE_CLASSES = (
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.redirects.middleware.RedirectFallbackMiddleware",
-    "mezzanine.core.middleware.DeviceAwareUpdateCacheMiddleware",
+#    "mezzanine.core.middleware.DeviceAwareUpdateCacheMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "mezzanine.core.middleware.DeviceAwareFetchFromCacheMiddleware",

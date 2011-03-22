@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h2>{{ q.titre }}</h2>
+<span>Question posée par {{q.prenom}} ({{q.region}})</span>
+
+<p class="texte">{{q.texte}}</p>
+
+
+{% endblock main %}

@@ -58,9 +58,17 @@
 
     <div id="grid-right" class="grid_5 grid">
         {% include "includes/search.html" %}
+        
+        
         {% block right_panel %}
+        
+        
             {% include "twitter/tweets.html" %}
+            
+            
         {% endblock %}
+        
+        
         <p class="mezzanine">
             {% trans "Powered by" %} 
             <a href="http://mezzanine.jupo.org">Mezzanine</a><br />
@@ -77,8 +85,12 @@
         <div class="grid_10 push_1 grid">
             {% page_menu "pages/menus/footer.html" %}
         </div>
+        
+
     </div>
 </div>
+
+
 
 {% include "includes/footer_scripts.html" %}
 </body>
