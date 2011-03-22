@@ -31,11 +31,9 @@ class Question(models.Model):
     cgu = models.BooleanField(default=True)
    
     def get_absolute_url(self):
-        return "/questions-rh/%i/" % self.slug
-   
+        return "/questions/%i/" % self.slug
     def __unicode__(self):
         return u"Question de "+unicode(self.prenom)+u" à "+unicode(self.ville)
-        
     def save(self, **kwargs):
         unique_slugify(self, self.titre) 
         super(Question, self).save()

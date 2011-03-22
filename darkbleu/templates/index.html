@@ -13,15 +13,5 @@
 {% endblock %}
 
 {% block right_panel %}
-
-
-<ul>
-{% for q in questions %}
-
-    <li>{{q.titre}}</li>
-
-{% endfor %}
-</ul>
-
-
+{% include "liste.html" %}
 {% endblock %}
