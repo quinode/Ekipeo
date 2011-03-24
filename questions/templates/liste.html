@@ -1,5 +1,13 @@
-<ul>
+
+<div id="qtab">
+<span>Dernières questions posées sur le site</span>
+</div>
+<ul id="liste_q">
 {% for q in questions %}
-    <li><a href="{% url questions.views.detail slug=q.slug %}">{{q.titre}}</a></li>
+    <li class="{% cycle 'even' 'odd' %}">
+    <a href="{% url questions.views.detail slug=q.slug %}">
+    <b>{{ q.date_q|date:"d/m" }} - {{q.prenom}} ({{q.region}}) : </b>
+    {{q.titre}}</a>
+    </li>
 {% endfor %}
 </ul>

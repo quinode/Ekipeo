@@ -31,7 +31,7 @@ h1 div.editable-original {
 	font: 700 36px "Yanone Kaffeesatz", Tahoma, Arial;
 }
 
-h1{
+h1 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #888;
 	border-style: dotted;
@@ -109,12 +109,12 @@ h5 {
 	text-shadow: #000 2px 2px 4px;
 }
 
-#breadcrumb-menu{
+#breadcrumb-menu {
 	margin-top: 4px;
 }
 
 #breadcrumb-menu li,
-#breadcrumb-menu li a{
+#breadcrumb-menu li a {
 	font-family: "Yanone Kaffeesatz", Tahoma, Arial;
 	font-weight: 400;
 	font-size: 18px;
@@ -128,13 +128,14 @@ form#editable-toolbar a,
 	font-weight: normal;
 	font-style: normal;
 }
-form#editable-toolbar a#editable-toolbar-toggle{
+
+form#editable-toolbar a#editable-toolbar-toggle {
 	position: relative;
 	display: inline-block;
 	z-index: 30000;
 }
 
-a.editable-link{
+a.editable-link {
 	position: static;
 	margin-top: -30px;
 	margin-left: -50px;
@@ -148,6 +149,134 @@ a.editable-link{
 	background: #E4E8E6 url(../img/arrondi13.png) no-repeat center top;
 	height: 13px;
 }
+
+#qtab {
+	height: 90px;
+	width: 310px;
+	margin-left: 45px;
+	background-image: url(../img/tab2.png);
+}
+
+#qtab span {
+	position: relative;
+	top: 57px;
+	font: bold 22px "Yanone Kaffeesatz", Tahoma, Arial;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+ul#liste_q {
+	border: 4px solid #78889f;
+	padding: 0;
+	overflow-y: scroll;
+	margin-left: 30px;
+	margin-right: 15px;
+	height: 300px;
+	border-radius : 4px;
+}
+
+ul#liste_q li {
+	background-color: #fff;
+	margin: 0;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	padding: 0.9em 0.7em 0.7em;
+}
+
+ul#liste_q li a {
+	text-decoration: none;
+}
+
+ul#liste_q li.odd {
+	background-color: #1476ee;
+	color: #fff;
+}
+
+ul#liste_q li.odd a,
+ul#liste_q li.odd a:visited {
+	color: #fff;
+}
+
+ul#liste_q li.even {
+	
+}
+
+/* @group showcase */
+
+#diaporama{
+	
+	height: 280px;
+	width: 940px;
+	position: relative;
+	margin-left: 10px;
+}
+
+#flou{
+	width: 940px;
+	position: absolute;
+	background-image: url(../img/cache.png);
+	z-index: 1000;
+	height: 249px;
+}
+
+.showcase {
+	position: relative;
+	margin: auto;
+	
+}
+
+/* This class is removed after the showcase is loaded */
+
+/* Assign the correct showcase height to prevent loading jumps in IE */
+
+.showcase-load {
+	height: 249px;
+
+
+/* Same as showcase javascript option */
+	overflow: hidden;
+}
+
+/* Content */
+
+.showcase-content {
+	text-align: center;
+	background-color: #000;
+	
+}
+
+.showcase-caption {
+	color: #000;
+	padding: 8px 15px;
+	text-align: left;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: none;
+	background-image: url(../img/white-opacity-60.png);
+	font-weight: bold;
+	float: left;
+	z-index: 3000;
+}
+
+.showcase-caption.vlink{
+	position: absolute;
+	left: 760px;
+	width: 120px;
+}
+
+.showcase img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/*
+
+@end */
 
 /* @group menu horizontal */
 
@@ -237,16 +366,18 @@ a.editable-link{
 
 /* @group colonne */
 
-#grid-right li {
-	display: block;
-	margin-top: 3px;
+#grid-right {
+	background: url(../img/points.png) repeat-y;
+	padding-top: 0;
 }
 
 /* @end */
 
 /* @group footer */
 
-#grid-bottom .container_12 {
+#grid-bottom .contai
+
+ner_12 {
 	background: #444;
 }
 

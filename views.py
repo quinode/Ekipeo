@@ -6,5 +6,6 @@ from questions.models import Question
 
 def home(request):
     q = Question.objects.filter(valide=True).order_by('-date_q')
-    rdict ={'questions':q}
+    v = q.filter(vitrine=True)
+    rdict ={'questions':q,'vitrine':v}
     return render_to_response('index.html',rdict,RequestContext(request))

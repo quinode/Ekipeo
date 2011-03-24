@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block extra_head %}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.aw-showcase.min.js"></script>
+{% endblock %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+
+{% block diaporama %}
+    {% if vitrine %}
+        <div id="diaporama">
+        <div id="flou"></div>
+        <div id="showcase" class="container_12 clearfix">
+        {% for item in vitrine %}
+            <div>
+            <img src="/site_media/{{item.image}}"/>
+            <span class="showcase-caption vtitre">{{item.titre}}</span>
+            <span class="showcase-caption vlink"><a href="{% url questions.views.detail slug=item.slug %}">Lire la réponse</a></span>
+            </div>
+        {% endfor %}
+        </div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            $("#showcase").awShowcase({
+                width:                  940,
+                height:                 249,
+                auto:                   true,
+                interval:               4000,
+                continuous:             true,
+                loading:                false,
+                arrows:                 false,
+                buttons:                false,
+                keybord_keys:           true,
+                mousetrace:             false,
+                pauseonover:            true,
+                transition:             'fade', /* vslide/hslide/fade */
+                transition_speed:       500,
+                show_caption:           'show', /* onload/onhover/show */
+            });
+        });
+        </script>
+    {% endif %}
+    
+{% endblock %}
+
+
+{% block title %}
+{% trans "Home" %}
+{% endblock %}
+
+{% block main %}
+{% trans "This is the homepage." %}
+{% endblock %}
+
+{% block right_panel %}
+{% include "liste.html" %}
+{% endblock %}

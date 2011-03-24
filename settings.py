@@ -10,7 +10,7 @@
 # order to override their defaults.
 
 # Name of the current theme to host during theme development.
-THEME = "darkbleu"
+#THEME = "darkbleu"
 
 # Controls the ordering and grouping of the admin menu. 
 # ADMIN_MENU_ORDER = (
